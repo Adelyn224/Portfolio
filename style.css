@@ -1,0 +1,59 @@
+/* this removies the default spacing around elements in the box */
+
+*{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+/* variables that can be accessed through out the css doc */
+:root{
+    --bg-color: white;
+    --text-color: black;
+    --primary-color: white;
+    --border-color: black;
+    --card-bg-color: white;
+    --shadow-color: rgba(0,0,0,0.1)
+}
+
+/* this selects and styles elements in the html doc which have their class attribute as container */
+.container{
+    max-width: 900px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: var(--bg-color);
+    box-shadow: 20px 2px 20px var(--shadow-color);
+    border-radius: 20px;
+}
+
+/* this selects and styles the header in the html doc */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* this selects and styles all the images within an ancor tag (a) in the html doc */
+a > img{
+    width: 100%;
+    max-width: 30px;
+    margin-left: 10px;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-mode{
+    width: 30px;
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size: 2em;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(51, 107, 203);
+}
