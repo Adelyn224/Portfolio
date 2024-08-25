@@ -16,6 +16,23 @@
     --shadow-color: rgba(51,107,203,0.5)
 }
 
+body.dark-mode{
+    --bg-color: rgb(21, 21, 21);
+    --text-color: white;
+    --primary-color: white;
+    --border-color: white;
+    --card-bg-color:rgb(21,21,21);
+    --shadow-color: rgba(51,107,203,0.5)
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+.intro{
+    color: var(--text-color);
+}
+
 /* this selects and styles elements in the html doc which have their class attribute as container */
 .container{
     max-width: 900px;
@@ -51,7 +68,7 @@ button{
     cursor: pointer;
 }
 
-.dark-mode{
+.dark-mode-button{
     width: 30px;
     border: none;
 }
